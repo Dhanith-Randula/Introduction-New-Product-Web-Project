@@ -5,6 +5,7 @@ import AboutUs from './Components/aboutUs';
 import Footer from './Components/footer';
 import Login from './Components/loging';
 import MenuBar1 from './MenuBar1';
+
 import Signup from './Components/signup';
 import SearchResultPage from './Components/search';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
