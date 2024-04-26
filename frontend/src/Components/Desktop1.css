@@ -50,7 +50,7 @@ button {
 }
 
 .image-container img {
-  width: 48%; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width as needed */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -74,4 +74,21 @@ button.learn-more {
 /* Center the "Learn More" button */
 .center-button {
   text-align: center;
+}
+
+.image-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+
+.image-size{
+  width: 200px;
+  height: 200px;
+  align-items: center;  
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  
+
 }

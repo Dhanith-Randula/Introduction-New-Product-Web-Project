@@ -1,7 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import "./Desktop1.css";
+import React from "react";
 import { Link } from "react-router-dom";
+
+
 /*<img src="image1.jpg" alt="Image 1" />
           <img src="image2.jpg" alt="Image 2" />*/
 function Desktop1() {
@@ -27,6 +30,34 @@ function Desktop1() {
           </p>
           
           <button className="learn-more">Learn More</button>
+
+          
+          <div className="image-row">
+          <a href="image6-link" style={{ position: "relative" }}>
+              <img src="./images/environment.jpg" alt="Image 6" className="image-size" />
+              <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" , color:"white"}}>Environmental & Nature</span>
+            </a>
+            <a href="image6-link" style={{ position: "relative" }}>
+              <img src="./images/fashion.jpg" alt="Image 7" className="image-size" />
+              <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" ,color:"white" }}>Lifestyle & Fashion</span>
+            </a>
+            <a href="image6-link" style={{ position: "relative" }}>
+              <img src="./images/food.jpg" alt="Image 8" className="image-size" />
+              <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" ,color:"white"}}>Food & Drink</span>
+            </a>
+            <a href="image6-link" style={{ position: "relative" }}>
+              <img src="./images/photography.jpg" alt="Image 9" className="image-size" />
+              <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" ,color:"white" }}>Photography</span>
+            </a>
+            <a href="image6-link" style={{ position: "relative" }}>
+              <img src="./images/technology.jpg" alt="Image 10" className="image-size" />
+              <span style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" , color:"white"}}>Technology</span>
+            </a>
+            
+          </div>
+          
+          
+          
         </div>
       </div>
     </header>
