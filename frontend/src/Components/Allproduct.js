@@ -45,7 +45,15 @@ function ProductAll() {
         <td>{product.categories}</td>
         <td>{product.productname}</td>
         <td>{product.discription}</td>
-        <td><img src={`http://localhost:8070/${product.image}`} /></td>
+        <td>{product.images && product.images.map((image, index) => (
+            <img className='product_image'
+              key={image.filename}
+              src={`http://localhost:8070/uploads/${image.filename}`}
+              alt={image.filename}
+              
+            />
+          ))}
+            </td>
     </tr>
 ))}
 

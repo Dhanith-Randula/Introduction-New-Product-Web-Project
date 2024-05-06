@@ -38,10 +38,10 @@ router.route("/add").post(upload.array('images', 5), (req,res) =>{
 
     newProduct.save().then(() =>{
         console.log("success");
-        res.status(201).json({ message: "Boarding house added" });
+        res.status(201).json({ message: "Product added" });
     }).catch((err) =>{
         console.error(err);
-         res.status(500).json({ message: "Failed to add boarding house" });
+         res.status(500).json({ message: "Failed to add product" });
     })
 
 })
@@ -62,13 +62,13 @@ router.route("/update/:id").put(async (req,res) =>{
         );
     
         if (!updatesproduct) {
-          return res.status(404).json({ message: 'Boarding house not found' });
+          return res.status(404).json({ message: 'Product not found' });
         }
     
         res.json(updatesproduct);
       } catch (error) {
         console.error(error);
-        res.status(500).json({ message: 'Failed to update boarding house' });
+        res.status(500).json({ message: 'Failed to update product' });
       }
 })
 

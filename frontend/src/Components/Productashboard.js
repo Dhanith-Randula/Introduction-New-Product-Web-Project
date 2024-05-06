@@ -3,6 +3,7 @@ import axios from 'axios';
 import { UserContext } from "../UserContext";
 
 
+
 function ProductDashboard() {
   const { user } = useContext(UserContext);
   const [boardingHouses, setProducts] = useState([]);
@@ -63,16 +64,19 @@ function ProductDashboard() {
       cursor: 'pointer',
     
   };
-  
   const editButton = {
+    
     padding: '10px 20px',
       margin: '10px',
       backgroundColor: 'black',
       color: 'white',
-      border: 'none',
+      border:'none',
       borderRadius: '5px',
       cursor: 'pointer',
-  };
+  
+};
+  
+  
   
   const imageStyle = {
     maxWidth: '400px',
