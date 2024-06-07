@@ -4,7 +4,8 @@ import ProductDashboard from './Components/Productashboard';
 import AboutUs from './Components/aboutUs';
 import Footer from './Components/footer';
 import Login from './Components/loging';
-import MenuBar1 from './MenuBar1';
+
+import M1 from './MenuBar';
 
 import Signup from './Components/signup';
 import SearchResultPage from './Components/search';
@@ -16,7 +17,8 @@ import ProductAll from './Components/Allproduct'
 function App() {
   return (
     <Router>
-      <MenuBar1 />
+      <M1 />
+      
       
       <div>
         
@@ -29,7 +31,7 @@ function App() {
           <Route path='/aboutus' exact Component={AboutUs} />
           <Route path='/search/:search' element={<SearchResultPage />} />
           <Route path='/link' element={<ProductAll/>}/>
-          '
+          
         </Routes>
 
         
