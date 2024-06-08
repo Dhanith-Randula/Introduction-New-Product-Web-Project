@@ -23,13 +23,24 @@ export const Contact = () => {
         },
       );
   };
+  const address = "Address : No:123,AAAAAAAAAAAAA,BBBBBBBBBBB,CCCCCCCCCCCC";
+const addressLines = address.split(',');
 
   return (
+    <div className="back">
+      <div className='contInfor'>
+        <h1 className="contacth1">Contact Us</h1>
+        <la className="contacth2">Telephone No : 0123456789 </la>
+        <br />
+        {addressLines.map((line, index) => (
+      <p key={index} style={{ marginLeft: index !== 0 ? '70px' : '0' }}>{line}</p>
+    ))}
+
+      </div>
     <div className="contact">
-      
     <form ref={form} onSubmit={sendEmail}>
       <la>Name</la>
-      <input className="nameinput" type="text" name="from_name" />
+      <input  type="name" name="from_name" />
       <br />
       <la>Email</la>
       <input type="email" name="from_email" />
@@ -39,6 +50,7 @@ export const Contact = () => {
         <br />
       <input type="submit" value="Send" />
     </form>
+    </div>
     </div>
   );
 };
