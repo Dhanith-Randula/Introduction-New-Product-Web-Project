@@ -134,7 +134,9 @@ const M1 = () => {
             <Link href="#" className="nav__link" to ="/link">
             All Product
           </Link></a></li>
-        <li className="hideOnMobile"><a href="#">Contact</a></li>
+        <li className="hideOnMobile"><a href="#"><Link href="#" className="nav__link" to ="/contact">
+            Contact
+          </Link></a></li>
         <li className="hideOnMobile"><a href="#">
             <Link href="#" className="nav__link" to ="/login">
             Login
