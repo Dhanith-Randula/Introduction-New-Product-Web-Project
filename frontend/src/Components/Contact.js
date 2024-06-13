@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
+import Footer from './footer.js'; 
 
 
 export const Contact = () => {
@@ -33,24 +34,25 @@ const addressLines = address.split(',');
         <la className="contacth2">Telephone No : 0123456789 </la>
         <br />
         {addressLines.map((line, index) => (
-      <p key={index} style={{ marginLeft: index !== 0 ? '70px' : '0' }}>{line}</p>
+      <p className="contacth2" key={index} style={{ marginLeft: index !== 0 ? '80px' : '0' }}>{line}</p>
     ))}
 
       </div>
     <div className="contact">
     <form ref={form} onSubmit={sendEmail}>
-      <la>Name</la>
-      <input  type="name" name="from_name" />
+      <la className='la'>Name</la>
+      <input className='i1' type="name" name="from_name" />
       <br />
-      <la>Email</la>
-      <input type="email" name="from_email" />
+      <la className='la' >Email</la>
+      <input className='i1' type="email" name="from_email" />
         <br />
-      <la>Message</la>
-      <textarea name="message" />
+      <la className='la' >Message</la>
+      <textarea className='t1' name="message" />
         <br />
-      <input type="submit" value="Send" />
+      <input className='i2' type="submit" value="Send" />
     </form>
     </div>
+    
     </div>
   );
 };
