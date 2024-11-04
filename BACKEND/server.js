@@ -21,6 +21,7 @@ mongoose.connect(URL,{
 
 const connection = mongoose.connection;
 connection.once("open",()=>{
+    console.log("URL : ",URL);
     console.log("Mongodb Connection success!");
 })
 

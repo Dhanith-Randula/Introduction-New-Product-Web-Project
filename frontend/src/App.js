@@ -26,6 +26,7 @@ function App() {
         
 
         <Routes>
+
           <Route path='/' exact Component={Desktop1} />
           <Route path='/addproduct' exact Component={ProductDashboard} />
           <Route path='/login' exact Component={Login}  />
