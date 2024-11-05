@@ -50,7 +50,7 @@ footer .container{
 
 .footer1{
   position: relative;
-  background: url('../assets/footerBack.jpg') no-repeat center;
+  background: url('/src/assets/footerBack.jpg') no-repeat center;
   background-size: cover;
 }
 

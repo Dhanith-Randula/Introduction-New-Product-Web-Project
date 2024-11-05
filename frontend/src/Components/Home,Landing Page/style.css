@@ -8,7 +8,7 @@ body{
 }
 
 
-/* carousel */
+
 .carousel{
     height: 100vh;
     margin-top: -50px;
@@ -29,7 +29,7 @@ body{
 }
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 1140px;
     max-width: 80%;
     left: 50%;
@@ -290,4 +290,18 @@ body{
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+}
+
+.h1{
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.name-search {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }

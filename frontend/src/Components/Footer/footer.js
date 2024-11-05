@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { SlSocialDribbble } from 'react-icons/sl';
 import {
@@ -33,7 +33,7 @@ const Footer = () => {
               <li><a href="#"><i class="fab fa-youtube"><TiSocialYoutube/></i></a></li>
 
             </ul>
-            <img src="./images/Logo..png" alt="Image 6"/> 
+            <img src="./images/Logo.png" alt="Image 6"/> 
           </div>
           <div class ="col2">
             <ul class="menu">

@@ -19,6 +19,7 @@ const M1 = () => {
       <ul className="sidebar">
         <li onClick={hideSidebar}>
           <a href="#">
+           
             <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
               <path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
             </svg>
@@ -92,7 +93,7 @@ const M1 = () => {
             <Link href="#" className="nav__link" to ="/aboutus" >
             About
           </Link></a></li>
-        <li className="nav-item dropdown">
+        <li className="nav-item-dropdown">
                 <a
                     className="nav-link-dropdown-toggle"
                     href="#"
@@ -102,7 +103,7 @@ const M1 = () => {
                 >
                     Catagories
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu custom-dropdown-width">
                     <li>
                     <Link className="dropdown-item" href="#" to ="">
                         Environmental & Nature

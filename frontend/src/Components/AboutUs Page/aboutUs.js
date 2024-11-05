@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./aboutUs.css";
-import Footer from "./footer";
+import Footer from "../Footer/footer";
 
 
 export default function AboutUs(){
