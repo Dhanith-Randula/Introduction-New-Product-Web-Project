@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import React, { useEffect } from "react";
+import { TiSocialFacebook } from "react-icons/ti";
+import { FaSearchengin } from "react-icons/fa";
 
 
 
@@ -91,19 +93,20 @@ function Desktop1() {
    
     <div className="carousel">
         <div className="list">
-            
             <div className="item">
-               
                 <img src="./images/En and Natu.jpg"/>
                   <div className="content">
-
-                    <div classNameName="name-search">
-                        <h1 classNameName="ha">INTRODUCTION NEW PRODUCT</h1>
-                        <div>
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
+                    <div className="main">
+                        <h1 className="text-wrapper">INTRODUCTION NEW PRODUCT</h1>
+                        <div className="box">
+                            <input type="text" placeholder="Search...."/>
+                                <a href="#">
+                                    <i className="fas fa-search">< FaSearchengin/></i>
+                                </a>
                         </div>
-                    </div> 
+                    </div>
+
+                    
 
                     <div className="author">LUNDEV</div>
                     <div className="title">DESIGN SLIDER</div>
@@ -121,14 +124,17 @@ function Desktop1() {
             <div className="item">
                 <img src="./images/food (2).jpg"/>
                 <div className="content">
-
-                    <div className="name-search">
-                        <h1 className="ha">INTRODUCTION NEW PRODUCT</h1>
-                        <div>
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
+                <div className="main"><h1 className="text-wrapper">INTRODUCTION NEW PRODUCT</h1>
+                <div className="box">
+                            <input type="text" placeholder="Search...."/>
+                                <a href="#">
+                                    <i className="fas fa-search">< FaSearchengin/></i>
+                                </a>
                         </div>
-                    </div>
+                </div>
+
+
+                    
 
                     <div className="author">LUNDEV</div>
                     <div className="title">DESIGN SLIDER</div>
@@ -145,14 +151,19 @@ function Desktop1() {
             <div className="item">
                 <img src="./images/life.jpg"/>
                 <div className="content">
-
-                    <div className="name-search">
-                        <h1 className="ha">INTRODUCTION NEW PRODUCT</h1>
-                        <div>
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
+                <div className="main">
+                    <h1 className="text-wrapper">INTRODUCTION NEW PRODUCT</h1>
+                    <div className="box">
+                            <input type="text" placeholder="Search...."/>
+                                <a href="#">
+                                    <i className="fas fa-search">< FaSearchengin/></i>
+                                </a>
                         </div>
-                    </div>
+                
+                </div>
+
+
+                    
                     <div className="author">LUNDEV</div>
                     <div className="title">DESIGN SLIDER</div>
                     <div className="topic">ANIMAL</div>
@@ -168,14 +179,18 @@ function Desktop1() {
             <div className="item">
                 <img src="./images/photo.jpg"/>
                 <div className="content">
-
-                    <div className="name-search">
-                        <h1 className="ha">INTRODUCTION NEW PRODUCT</h1>
-                        <div>
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
+                <div className="main">
+                    <h1 className="text-wrapper">INTRODUCTION NEW PRODUCT</h1>
+                    <div className="box">
+                            <input type="text" placeholder="Search...."/>
+                                <a href="#">
+                                    <i className="fas fa-search">< FaSearchengin/></i>
+                                </a>
                         </div>
-                    </div>
+                </div>
+
+
+                    
                     <div className="author">LUNDEV</div>
                     <div className="title">DESIGN SLIDER</div>
                     <div className="topic">ANIMAL</div>
@@ -191,14 +206,20 @@ function Desktop1() {
             <div className="item">
                 <img src="./images/tec.jpg"/>
                 <div className="content">
-                    
-                    <div className="name-search">
-                        <h1 className="ha">INTRODUCTION NEW PRODUCT</h1>
-                        <div>
-                        <input type="text" placeholder="Search..." />
-                        <button>Search</button>
-                        </div>
+                <div className="main">
+                    <h1 className="text-wrapper">INTRODUCTION NEW PRODUCT</h1>
+                    <div className="box">
+                            <input type="text" placeholder="Search...."/>
+                                <a href="#">
+                                    <i className="fas fa-search">< FaSearchengin/></i>
+                                </a>
                     </div>
+                    
+
+                </div>
+
+                    
+                    
                     <div className="author">LUNDEV</div>
                     <div className="title">DESIGN SLIDER</div>
                     <div className="topic">ANIMAL</div>

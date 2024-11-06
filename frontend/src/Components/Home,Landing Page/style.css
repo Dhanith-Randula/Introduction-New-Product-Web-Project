@@ -5,6 +5,7 @@ body{
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
+    
 }
 
 
@@ -39,7 +40,28 @@ body{
     color: #fff;
     text-shadow: 0 5px 10px #0004;
 }
+.carousel .list .item .content .main{
+    
+    display: flex;
+    margin: 10px;
+    position: relative;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    text-align: center;
+    left: 50%;
+    padding-bottom: 200px;
+}
+
+.carousel .list .item .content .box{
+    
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .carousel .list .item .author{
+    /* text-align: center; */
     font-weight: bold;
     letter-spacing: 10px;
 }
@@ -292,16 +314,76 @@ body{
     }
 }
 
-.h1{
-    text-align: center;
-    font-size: 5em;
+
+
+
+
+
+.text-wrapper{
+    
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: bold;
-    line-height: 1.3em;
+    background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), to(#262626), color-stop(0.5,#fff)) no-repeat;
+    -webkit-background-size:150px ;
+    background-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px white;
+    animation: animate 3s linear infinite;
+    font-size: 7em;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 5px 10px #0004;
+
 }
 
-.name-search {
-    display: block;
-    justify-content: center;
+@keyframes animate {
+    0%, 10% {
+        background-position: -1000px;
+    }
+    20% {
+        background-position: top left;
+    }
+    90% {
+        background-position: top right;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}
+
+.box{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
     align-items: center;
-    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.box:hover input{
+    width: 500px;
+    padding: 0 10px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.box input{
+    width: 0;
+    font-weight: 500;
+    transition: .9s;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.box a .fas{
+    font-size: 20px;
+    color: #f1683a;
+   
 }
