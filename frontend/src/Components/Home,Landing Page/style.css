@@ -52,27 +52,24 @@ body{
     padding-bottom: 200px;
 }
 
-.carousel .list .item .content .box{
-    
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 .carousel .list .item .author{
-    /* text-align: center; */
+   
     font-weight: bold;
     letter-spacing: 10px;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic{
-    font-size: 5em;
+
+    -webkit-text-stroke: 2px rgba(107, 107, 107, 0.7);
+    font-size: 4em;
     font-weight: bold;
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
+    padding-left: 50px;
     color: #f1683a;
+    
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -87,12 +84,24 @@ body{
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    border-radius: 10px;
+
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
 }
+
+.carousel .list .item .buttons button:nth-child(1):hover{
+    background-color: #f1683a;
+    border: 1px solid black;
+
+
+   
+}
+
+
 /* thumbail */
 .thumbnail{
     position: absolute;
@@ -356,11 +365,18 @@ body{
 }
 
 .box{
+
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
     height: 50px;
     display: flex;
     cursor: pointer;
     padding: 10px 20px;
-    background: #fff;
+    background: #ffffffd8;
     border-radius: 30px;
     align-items: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
@@ -371,6 +387,7 @@ body{
     padding: 0 10px;
     opacity: 1;
     pointer-events: auto;
+    
 }
 
 .box input{
