@@ -23,6 +23,7 @@ const Footer = () => {
     <div class="footer-top">
         <div class="container">
           <div class ="col1">
+           
             <a href='#' class="brand"> INTRODUCTION NEW PRODUCT  </a>
             <ul class="media-icons">
             
