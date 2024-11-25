@@ -28,7 +28,7 @@ export default function AboutUs(){
       </div>
 
       <div className="contactInfoStyle" >
-        <h2 className="headingStyle" >Join the introduction new product Community</h2>
+        <h2 className="headingStyle" >Join The Introduction New Product Community</h2>
         <p className="paragraphStyle" >
            We invite you to be a part of our ever-growing community of forward-thinkers and 
            tastemakers. As we continue to introduce the future, we're excited to have you 
