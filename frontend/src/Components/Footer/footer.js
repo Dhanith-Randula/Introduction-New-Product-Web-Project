@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer class="footer1">
     <div class="footer-top">
-        <div class="container">
+        <div class="container1">
           <div class ="col1">
            
             <a href='#' class="brand"> INTRODUCTION NEW PRODUCT  </a>
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
     </div>
     <div class ="footer-bottom">
-            <div class="container">
+            <div class="container1">
               <p>&copy; 2024 Brand. All Rights Reserved.</p>
               <ul class ="service-icons">
                 <li><a href="#"><i class="fab fa-cc-amazon-pay"><TiCreditCard/></i></a></li>

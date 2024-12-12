@@ -82,6 +82,7 @@ const M1 = () => {
         <li><a href="#"><Link href="#" className="nav__link" to ="/signup">
             Sign Up
           </Link></a></li>
+          
       </ul>
       <ul>
         <li className="newproduct"><a href="#">NEW PRODUCT</a></li>
@@ -140,13 +141,15 @@ const M1 = () => {
           </Link></a></li>
         <li className="hideOnMobile"><a href="#">
             <Link href="#" className="nav__link" to ="/login">
-            Login
+            Login & Register
           </Link></a></li>
-        <li className="hideOnMobile"><a href="#">
+        {/* <li className="hideOnMobile"><a href="#">
           <Link href="#" className="nav__link" to ="/signup">
             Sign Up
           </Link></a>
-        </li>
+
+        </li> */}
+        
         <li className="menu-button" onClick={showSidebar}>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
