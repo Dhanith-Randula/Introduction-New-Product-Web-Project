@@ -14,9 +14,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #25252b;
-    /* background: url('/public/images/login.mp4') no-repeat center center fixed; */
-    /* background-size: cover; */
+    /* background: #25252b; */
+    background: url('/public/images/mountain.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
     
 }
 
@@ -24,11 +25,51 @@
     position: relative;
     width: 750px;
     height: 450px;
-    border: 2px solid #ff2770;
-    box-shadow: 0 0 25px #ff2770;
-    padding-left: 30px;
+    border: 2px solid #A3AE69 ;
+    box-shadow: 0 0 25px #A3AE69 ;
+    padding-left: 2em;
     overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #25252bbb;
+    
+    /* #ff2770 */
+
 }
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .container::after, .container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .container::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
 
 
 .container .form-box{
@@ -112,7 +153,7 @@
 
 .input-box input:focus,
 .input-box input:valid{
-    border-bottom: 2px solid #ff2770;
+    border-bottom: 2px solid #A3AE69 ;
 
 
 }
@@ -132,7 +173,7 @@
 .input-box input:valid ~ label{
     top: -5px;
     left: 0;
-    color: #ff2770;
+    color: #A3AE69 ;
     font-size: 12px;
 }
 
@@ -151,16 +192,16 @@
 .input-box input:focus ~ i,
 .input-box input:valid ~ i{
     
-    color: #ff2770;
+    color: #A3AE69 ;
     
 }
 
-.btn{
+.btn1{
     position: relative;
     width: 100%;
     height: 45px;
     background: transparent;
-    border: 2px solid #ff2770;
+    border: 2px solid #A3AE69 ;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
@@ -170,20 +211,20 @@
 
 }
 
-.btn::before{
+.btn1::before{
     content: '';
     position: absolute;
     top: -100%;
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#25252b , #ff2770,#25252b , #ff2770);
+    background: linear-gradient(#25252b , #A3AE69 ,#25252b , #A3AE69 );
     z-index: -1;
     transition: .5s;
     
 }
 
-.btn:hover::before{
+.btn1:hover::before{
     top: 0;
 }
 
@@ -194,7 +235,7 @@
 }
 
 .regi-link a{
-    color: #ff2770;
+    color: #A3AE69 ;
     text-decoration: none;
     font-weight: 600;
 }
@@ -287,7 +328,7 @@
     right: 0;
     width: 850px;
     height: 600px;
-    background: linear-gradient(45deg,#25252b,#ff2770);
+    background: linear-gradient(45deg,#25252b,#A3AE69 );
     transform: rotate(10deg) skewY(40deg );
 
 
@@ -310,7 +351,7 @@
     width: 850px;
     height: 700px;
     background: #25252b;
-    border-top: 3px solid #ff2770;
+    border-top: 3px solid #A3AE69 ;
     transform: rotate(0deg) skewY(0deg );
 
     transform-origin: bottom left;

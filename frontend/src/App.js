@@ -9,6 +9,7 @@ import M1 from './Components/Navigatio,Menu Bar/MenuBar';
 import SearchResultPage from './Components/search';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductAll from './Components/All Product Page/Allproduct'  ;
+import Catagorie from './Components/catagories/catagorie';
 
 /*<MenuBar1 />
         
@@ -27,6 +28,7 @@ function App() {
           <Route path='/search/:search' element={<SearchResultPage />} />
           <Route path='/link' element={<ProductAll/>}/>
           <Route path='/contact' element={<Contact />} />
+          <Route path='/catogories' element={<Catagorie />} /> 
           
           
         </Routes>

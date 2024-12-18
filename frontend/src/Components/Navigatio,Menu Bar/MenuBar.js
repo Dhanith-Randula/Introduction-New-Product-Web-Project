@@ -106,7 +106,7 @@ const M1 = () => {
                 </a>
                 <ul className="dropdown-menu custom-dropdown-width">
                     <li>
-                    <Link className="dropdown-item" href="#" to ="">
+                    <Link className="dropdown-item" href="#" to ="/catogories">
                         Environmental & Nature
                     </Link>
                     </li>

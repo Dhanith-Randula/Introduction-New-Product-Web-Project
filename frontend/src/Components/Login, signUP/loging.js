@@ -57,12 +57,6 @@ export default function Login() {
     }
   }
 
-  // const navigate = useNavigate();
-  //   const { setUser } = useContext(UserContext);
-
-  //   const [username, setUsername] = useState("");
-  //   const [password, setPassword] = useState("");
-
     function sendData(e){
         e.preventDefault();
         const newUser = {
@@ -99,6 +93,7 @@ export default function Login() {
     <header>
       <div className="bodybody">
         <div className="container">
+          
           <div className="curved-shape"></div>
           <div className="curved-shape2"></div>
 
@@ -128,7 +123,7 @@ export default function Login() {
                 <i className="fas fa-lock"></i>
               </div>
               <div className="input-box animation" style={{ "--D": 3, "--S": 24 }}>
-                <button className="btn" type="submit">
+                <button className="btn1" type="submit">
                   Loging
                 </button>
               </div>
@@ -181,7 +176,7 @@ export default function Login() {
                 <i className="fas fa-lock"></i>
               </div>
               <div className="input-box animation" style={{ "--li": 20, "--S": 4 }}>
-                <button className="btn" type="submit">
+                <button className="btn1" type="submit">
                   Sign Up
                 </button>
               </div>

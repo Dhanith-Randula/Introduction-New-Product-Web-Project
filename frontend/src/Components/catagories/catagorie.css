@@ -1,0 +1,102 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.body1 {
+    background: url('https://source.unsplash.com/1920x1080/?nature,mountains') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1.header {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Product Card Layout */
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image .image {
+    background-color: #e74c3c;
+    color: #fff;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.product-details h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.see-more {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer .see-more {
+    font-size: 1.2rem;
+}
