@@ -4,24 +4,15 @@ import './catagorie.css';
 import  { useState, useEffect } from 'react';
 
 
-
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Category Page</title>
-//     <link rel="stylesheet" href="styles.css">
-// </head>
-
 export default function Catagorie() {
     const [products, setProducts] = useState([]);
+    const [expanded, setExpanded] = useState(false);
 
     useEffect(() => {
         // Function to make a GET request to fetch products from the backend
         const fetchProducts = async () => {
             try {
-                const response = await fetch('http://localhost:8070/product/'); // Replace with the correct API route
+                const response = await fetch('http://localhost:8070/product/');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -34,6 +25,17 @@ export default function Catagorie() {
 
         fetchProducts();
     }, []);
+
+    const toggleExpand = () => {
+        setExpanded(!expanded);
+    };
+
+    const description = products[0]?.discription;
+    const shortenedDescription = description?.substring(0, 800);
+
+    const firstCategoryProducts = products.filter(product => product.category === 'Environment & Nature');
+
+    const firstProduct = firstCategoryProducts[0];
 
 
     return(
@@ -63,27 +65,39 @@ export default function Catagorie() {
 // ))
 }
         <h1 class="header">CATEGORY NAME</h1>
-        {/* <!-- Search Bar --> */}
+        {/* <h1 class="header"></h1> */}
         <div class="search-bar">
             <input type="text" placeholder="Search..."/>
         </div>
-        
-        {/* <!-- Product Section 1 --> */}
         <div class="product-card">
             <div class="product-image left">
-                
-                
-                {/* <img src='/'></img> */}
                 <div class="image">Image</div>
             </div>
             <div class="product-details">
-                <h2>PRODUCT NAME</h2>
-                <p>Description</p>
-                <a href="#" class="see-more">see more {">"}</a>
+
+            {firstProduct && (
+                    <div>
+                        <h1>{firstProduct.name}</h1>
+                        <p>HIIIIIIIIIIIII</p>
+                        {/* <p>{shortenedDescription}</p> */}
+                    </div>
+                )}
+                
+                {/* <h2>PRODUCT NAME</h2> */}
+                <h2>{products[0]?.productname}</h2>
+                {expanded ? (
+                                <p>{description}</p>
+                            ) : (
+                                <p>{shortenedDescription}...</p>
+                            )}
+                            <button onClick={toggleExpand} class="see-more">
+                                {expanded ? 'See Less' : 'See More'}
+                            </button>
+                {/* <p>{products[0]?.discription}</p> */}
+                {/* <p>Description</p> */}
+                {/* <a href="#" class="see-more">see more {">"}</a> */}
             </div>
         </div>
-
-        {/* <!-- Product Section 2 --> */}
         <div class="product-card">
             <div class="product-details">
                 <h2>PRODUCT NAME</h2>
@@ -95,8 +109,6 @@ export default function Catagorie() {
             </div>
         </div>
     </div>
-
-    {/* <!-- See More Link --> */}
     <div class="footer">
         <a href="#" class="see-more">SEE MORE {">"}</a>
     </div>
@@ -104,3 +116,4 @@ export default function Catagorie() {
 </body>
     )
 }
+
