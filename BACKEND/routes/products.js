@@ -20,10 +20,9 @@ router.route("/add").post(upload.array('images', 5), (req,res) =>{
     const productname = req.body.productname;
     const discription = req.body.discription;
     
-    const images = req.files.map((file) => ({
+    const images = (req.files || []).map((file) => ({
         filename: file.originalname, 
         path: file.path, 
-        
       }));
 
         
@@ -76,11 +75,12 @@ router.route("/update/:id").put(async (req,res) =>{
 
 router.route("/").get((req,res) =>{
     Product.find().then((products) =>{
-        res.json(products)
+        res.json(products);
     }).catch((err)=>{
-        console.log(err)
-    })
-})
+        console.log(err);
+        res.status(500).json({ error: err.message });
+    });
+});
 //find product by product name
 
 router.route("/get/:productname").get(async (req,res) => {
@@ -126,13 +126,13 @@ router.get('/search', async (req, res) => {
     const { keyword } = req.query;
     console.log(keyword);
     try {
-        
-        const products = await Product.find({
+        const query = keyword ? {
             $or: [
                 { categories: { $regex: keyword, $options: 'i' } },
                 { productname: { $regex: keyword, $options: 'i' } }
             ]
-        });
+        } : {};
+        const products = await Product.find(query);
 
         res.status(200).json({ message: 'Search results', results: products });
     } catch (error) {
