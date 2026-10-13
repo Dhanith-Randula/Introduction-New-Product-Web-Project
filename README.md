@@ -17,8 +17,6 @@ A modern, full-stack MERN application for discovering, showcasing, and managing 
 - [Environment Variables](#-environment-variables)
 - [API Endpoints](#-api-endpoints)
 - [Available Scripts](#-available-scripts)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
@@ -189,18 +187,3 @@ In `BACKEND/.env`:
 - `npm test`: Runs interactive test runners
 
 ---
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).
